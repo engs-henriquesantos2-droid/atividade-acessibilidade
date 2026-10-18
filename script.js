@@ -1,26 +1,41 @@
- // Funções de acessibilidade
+
+// Funções de acessibilidade
 let tamanhoFonte = 100;
 let tamanhoMain = 800;
-let main = document.querySelector("main")
+let main = document.querySelector("main");
 
 function aumentarFonte() {
-
+    if (tamanhoFonte < 150) {
         tamanhoFonte += 10;
         document.body.style.fontSize = tamanhoFonte + "%";
+    }
+
+    if (tamanhoMain < 1000) {
         tamanhoMain += 50;
         main.style.maxWidth = tamanhoMain + "px";
-
+    }
 }
 
 function diminuirFonte() {
-    
+    if (tamanhoFonte > 80) {
         tamanhoFonte -= 10;
         document.body.style.fontSize = tamanhoFonte + "%";
-        if(tamanhoMain > 800){
-            tamanhoMain -= 50;
-            main.style.maxWidth = tamanhoMain + "px";
-        }
-        
-    
+    }
+
+    if (tamanhoMain > 800) {
+        tamanhoMain -= 50;
+        main.style.maxWidth = tamanhoMain + "px";
+    }
 }
 
+function alternarContraste() {
+    document.body.classList.toggle("alto-contraste");
+
+    let botao = document.querySelector(".acessibilidade button:last-child");
+
+    if (document.body.classList.contains("alto-contraste")) {
+        botao.setAttribute("aria-pressed", "true");
+    } else {
+        botao.setAttribute("aria-pressed", "false");
+    }
+}
