@@ -11,11 +11,13 @@
         <p>Jornal Web</p>
         <p>As principais notícias do dia, em um só lugar.</p>
 
-        <div class="acessibilidade">
-            <button onclick="aumentarFonte()">A+</button>
-            <button onclick="diminuirFonte()">A-</button>
-            <button onclick="alternarContraste()">Contraste</button>
-        </div>  
+        
+<div class="acessibilidade">
+    <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+    <button onclick="alternarContraste()" aria-pressed="false">Alto contraste</button>
+</div>
+
     </header>
 
     <nav>
