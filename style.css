@@ -34,20 +34,25 @@ header {
 }
 
 /* Menu de navegação */
+
+/* Menu de navegação */
 nav {
     background-color: red;
-    text-align: center;
+    text-align: left;
     padding: 10px;
+    width: 150px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 nav a:hover {
-
+    text-decoration: underline;
 }
 
 /* Conteúdo principal */
