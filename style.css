@@ -21,10 +21,12 @@ header h1 {
 }
 
 
-.slogan {
 
-    margin-bottom: 10px;
+.slogan {
+    margin-bottom: 15px;
+    font-size: 16px;
 }
+
 
 .acessibilidade button {
     margin: 5px;
